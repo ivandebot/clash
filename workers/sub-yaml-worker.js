@@ -1,4 +1,4 @@
-const WORKER_VERSION = "2026-11-02-naming-switch";
+const WORKER_VERSION = "2026-11-02-naming-switch2";
 const CACHE_TTL_SECONDS = 3600;
 const DISPLAY_NAMES = {
   a2: "聚合优选-黑名单",
@@ -85,9 +85,9 @@ export default {
     }
 
     const configMap = {
-      a2: `https://raw.githubusercontent.com/ivanfuland/clash/main/Clash-A2.ini?v=${WORKER_VERSION}`,
-      a3: `https://raw.githubusercontent.com/ivanfuland/clash/main/Clash-A3.ini?v=${WORKER_VERSION}`,
-      a4: `https://raw.githubusercontent.com/ivanfuland/clash/main/Clash-A4.ini?v=${WORKER_VERSION}`,
+      a2: `https://cdn.jsdelivr.net/gh/ivanfuland/clash@main/Clash-A2.ini?v=${WORKER_VERSION}`,
+      a3: `https://cdn.jsdelivr.net/gh/ivanfuland/clash@main/Clash-A3.ini?v=${WORKER_VERSION}`,
+      a4: `https://cdn.jsdelivr.net/gh/ivanfuland/clash@main/Clash-A4.ini?v=${WORKER_VERSION}`,
     };
 
     const rawConfig =
