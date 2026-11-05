@@ -95,6 +95,7 @@ rules:
   - GEOSITE,google,🔍 Google
   - GEOSITE,microsoft,📄 Microsoft
   - DOMAIN,sub.judyplan.com,DIRECT   # 订阅地址必须直连
+  - DOMAIN-SUFFIX,aigallerie.com,DIRECT   # 自建节点域名直连，避免被当成境外流量二次代理
   - RULE-SET,Mine,🌐 国外
   - DOMAIN-SUFFIX,ts.net,DIRECT
   - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
