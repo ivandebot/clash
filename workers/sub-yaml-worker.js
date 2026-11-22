@@ -1,4 +1,4 @@
-const WORKER_VERSION = "2026-11-05-cache-key-osaka-cleanup";
+const WORKER_VERSION = "2026-11-22-fix-substore-target-clashmeta";
 const CACHE_TTL_SECONDS = 3600;
 const DISPLAY_NAMES = {
   a2: "聚合优选-黑名单",
@@ -116,7 +116,7 @@ export default {
     target.searchParams.set("target", "clash");
     target.searchParams.set(
       "url",
-      "http://converter.judyplan.com:3001/T3B9dgzBzdRbF8Aqx7P/download/collection/aggressive"
+      "http://converter.judyplan.com:3001/T3B9dgzBzdRbF8Aqx7P/download/collection/aggressive?target=ClashMeta"
     );
     target.searchParams.set("config", configMap[configName]);
     target.searchParams.set("scv", "true");
@@ -134,7 +134,7 @@ export default {
       response = await fetch(target.toString(), {
         method: "GET",
         headers: {
-          "User-Agent": request.headers.get("User-Agent") || "",
+          "User-Agent": "ClashMeta",
         },
       });
     } catch (error) {
